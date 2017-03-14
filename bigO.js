@@ -22,13 +22,13 @@ function fibonacci(num){
 fibonacci(50);
 
 //O(2^n)
-function fib(n){
-  if(n<=1)
-    return n;
-  else
-    return fib(n-1) + fib(n-2);
-}
-fib(50);
+// function fib(n){
+//   if(n<=1)
+//     return n;
+//   else
+//     return fib(n-1) + fib(n-2);
+// }
+// fib(50);
 
 //O(n^2)
 function bubbleSort(array) {
