@@ -21,7 +21,7 @@ function fibonacci(num){
 }
 fibonacci(50);
 
-//O(n^2)
+//O(2^n)
 function fib(n){
   if(n<=1)
     return n;
@@ -29,3 +29,20 @@ function fib(n){
     return fib(n-1) + fib(n-2);
 }
 fib(50);
+
+//O(n^2)
+function bubbleSort(array) {
+  var swapped;
+  do {
+    swapped = false;
+    for(var i = 0; i < array.length; i++) {
+      if(array[i] && array[i + 1] && array[i] > array[i + 1]) {
+        swap(array, i, i + 1);
+        swapped = true;
+      }
+    }
+  } while(swapped);
+  return array;
+}
+
+console.log(bubbleSort(array.slice()));
